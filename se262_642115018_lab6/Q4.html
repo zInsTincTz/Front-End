@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life in weeks</title>
+  </head>
+  <body>
+    <script>
+      // write your code here
+      function remainingLife(currentAge) {
+        var daysLeft;
+        var weeksLeft;
+        var monthsLeft;
+
+        var currentAge = prompt("What is your current age?");
+
+        daysLeft = (90 - currentAge) * 365;
+        weeksLeft = (90 - currentAge) * 52;
+        monthsLeft = (90 - currentAge) * 12;
+
+        alert(
+          "You have " +
+            daysLeft +
+            " days, " +
+            weeksLeft +
+            " weeks, and " +
+            monthsLeft +
+            " months left."
+        );
+      }
+
+      remainingLife();
+    </script>
+  </body>
+</html>

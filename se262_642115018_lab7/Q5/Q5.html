@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainbow</title>
+  </head>
+  <body>
+    <button>Red</button>
+    <button>Orange</button>
+    <button>Yellow</button>
+    <button>Green</button>
+    <button>Blue</button>
+    <button>Purple</button>
+
+    <script>
+      for (const btn of document.querySelectorAll("button")) {
+        btn.addEventListener("click", function (event) {
+          document.querySelector("body").style.backgroundColor =
+            event.target.innerHTML;
+          console.log(event.target);
+        });
+      }
+    </script>
+  </body>
+</html>

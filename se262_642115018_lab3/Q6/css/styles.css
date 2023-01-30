@@ -1,0 +1,44 @@
+body {
+ 	font-family: 'Roboto', sans-serif; 
+	text-align: center;
+}
+
+/* Add CSS of <hr>  3 points */
+hr{
+	border: 0px;
+	border-bottom: 5px dotted goldenrod;
+	width: 10%;
+}
+
+#header{
+    display: grid;
+    height: 120px;
+    min-width: 120px;
+	/* Add more properties  2 points */
+	background-image: url("../img/hand-painted-watercolor-background-with-sky-clouds-shape.jpg") ;
+	background-position: right bottom;
+	color: white;
+	text-shadow: 2px 2px 8px black;
+}
+.item{
+	width: 50%;
+	margin: 100px auto;
+	/* Add more properties 2 points */
+	text-align: left;
+	line-height: 2;
+}
+
+/* Add CSS of class img-ski and img-beach 2 points*/
+.img-ski{
+	float: left;
+}
+.img-beach{
+	float: right;
+}
+
+#footer{
+	padding: 20px;
+	/* Add more properties 1 points */
+	background-color: #a9a9a9;
+	
+}

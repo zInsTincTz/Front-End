@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>99 Bottles Challenge</title>
+  </head>
+  <body>
+    <script>
+      // write your code here
+      function beerBottlesSong() {
+        var bottles;
+        var counter = 99;
+
+        while (counter > 0) {
+          if (counter > 1) {
+            var bottles = "bottles";
+          } else {
+            var bottles = "bottle";
+          }
+          console.log(counter + " " + bottles + " of beer on the wall");
+          console.log(counter + " " + bottles + " of beer,");
+          console.log("Take one down, pass it around,");
+          counter = counter - 1;
+          if (counter > 0) {
+            if (counter == 1) {
+              var bottles = "bottle";
+            }
+            console.log(counter + " " + bottles + " of beer on the wall.");
+          } else {
+            if (counter < 1) {
+              var bottles = "bottles";
+            }
+            console.log("No more " + bottles + " of beer on the wall.");
+          }
+        }
+      }
+      console.log(beerBottlesSong());
+    </script>
+  </body>
+</html>

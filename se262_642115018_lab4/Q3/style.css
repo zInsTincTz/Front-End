@@ -1,0 +1,49 @@
+.container {
+  /* The width and height of the Container element are auto and 600px. */
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+  height: 600px;
+}
+
+.box {
+  /* Each box is 100x150 pixels (color: #eeeff2), with a 10px dotted line (color: #D0D0FF) on the left. 
+     */
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 150px;
+  background-color: #eeeff2;
+  border-left: dotted 10px #d0d0ff;
+}
+
+.box:hover {
+  /* When hovering over an box, the box and font colors change (colors: yellow, goldenrod, respectively). */
+  background-color: yellow;
+  color: goldenrod;
+}
+
+.align {
+  /* Boxes are separated by 10 pixels of space. */
+  margin: 10px;
+}
+
+.font {
+  /* The font in all elements is Tahoma, 40 pixels. */
+  font-family: Tahoma;
+  font-size: 40px;
+}
+
+span {
+  /* The distance between lines of text is 2. 
+    There are 10 pixels of space between the letters and the edge of the box. */
+  line-height: 2;
+  padding: 10px;
+}
+
+/* Add a new class to style the box "F" is positioned in the bottom right corner of the container element and stays there even when the window resizes. */
+.boxF {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

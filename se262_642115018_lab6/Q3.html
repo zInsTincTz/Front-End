@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bean Counting</title>
+  </head>
+  <body>
+    <script>
+      //write your code here
+      function countBs(str) {
+        var counter = 0;
+        for (var i = 0; i < str.length; i++) {
+          if (str.charAt(i) === "B") {
+            counter++;
+          }
+        }
+        return counter;
+      }
+
+      console.log(countBs("BBC"));
+
+      function countChar(str, char) {
+        var counter = 0;
+        for (var i = 0; i < str.length; i++) {
+          if (str.charAt(i) === char) {
+            counter++;
+          }
+        }
+        return counter;
+      }
+
+      console.log(countChar("kakkerlak", "k"));
+    </script>
+  </body>
+</html>

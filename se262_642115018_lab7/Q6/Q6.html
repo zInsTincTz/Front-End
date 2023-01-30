@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game of Chase</title>
+
+    <style>
+      .dot {
+        height: 100px;
+        width: 100px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Write your code here. -->
+    <div class="dot"></div>
+
+    <script type="text/javascript">
+      var color = ["red", "orange", "yellow", "green", "blue", "purple"];
+
+      document.querySelector("div").addEventListener("click", function () {
+        document.querySelector("div").style.background =
+          color[Math.floor(Math.random() * color.length)];
+      });
+
+      document.querySelector("div").addEventListener("mouseover", randPosition);
+      let stop = false;
+      function randPosition() {
+        if (!stop) {
+          let ball = document.querySelector("div");
+          ball.style.top = Math.random() * 250 + "px";
+          ball.style.left = Math.random() * 250 + "px";
+          stop = true;
+          setTimeout(() => {
+            stop = false;
+          }, 500);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Censored Keybord</title>
+  </head>
+  <body>
+    <!-- Write your code here. -->
+    <input type="text" />
+    <script>
+      let field = document.querySelector("input");
+
+      field.addEventListener("keydown", function (event) {
+        if (
+          // Q keycode 81
+          event.keyCode == "Q".charCodeAt(0) ||
+          // W keycode 87
+          event.keyCode == "W".charCodeAt(0) ||
+          // X keycode 88
+          event.keyCode == "X".charCodeAt(0)
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>

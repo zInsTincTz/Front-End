@@ -1,0 +1,110 @@
+/* HTML element */
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+section:nth-of-type(2n-1) {
+  background-color: #ff4c68;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Container */
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+#collapseNav {
+  gap: 36px;
+}
+
+.topbar {
+  padding-bottom: 4rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+/* title */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.dog-img {
+  rotate: 25deg;
+  width: 40%;
+  height: auto;
+}
+
+.splash-text {
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.button-container {
+  gap: 3%;
+  padding: 5%;
+}
+
+/* Feature section   */
+i {
+  color: #ef8172;
+}
+
+section#features h3 {
+  padding-top: 0.5em;
+  font-size: 1.75rem;
+}
+
+section#features p {
+  line-height: 1.5;
+  padding: 0 5% 0 5%;
+}
+
+/* Download section */
+.btn-light i {
+  color: #000;
+}
+
+.btn-dark i {
+  color: #fff;
+}
+
+/* footer section*/
+.social-icon-list {
+  gap: 1em;
+}
+
+.social-icon-list i {
+  color: black;
+}
